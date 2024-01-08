@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment</title>
+  
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <nav>
+    <!-- Navbar -->
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="age-input">
+    <input type="number" id="ageInput" placeholder="Enter your age" oninput="checkAge()">
+  </div>
+
+  <div class="container">
+    <!-- Cards Section -->
+    <div class="card" id="card1">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjkGvSX4B8vGYMdN5Jnt1-DSmFpXST4JRPXeRfulCCwHqQYJ_HxOCspMgnpOchVLQFH3E&usqp=CAU" alt="Placeholder Image">
+      <div class="card-content">
+        <h2>HTML</h2>
+        <p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
+      </div>
+    </div>
+
+    <div class="card" id="card2">
+      <img src="https://blog.webico.vn/wp-content/uploads/2019/12/flags-dd-css-3.png" alt="Placeholder Image">
+      <div class="card-content">
+        <h2>CSS
+        </h2>
+        <p>Description 2Cascading Style Sheets is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+      </div>
+    </div>
+
+    <div class="card" id="card3">
+      <img src="https://1.bp.blogspot.com/-TGQt5uRcAkg/XuMIJoAhwnI/AAAAAAAAA34/l8bWxNY_DwMrowIr4rjV7KHpUHTIDpsRQCLcBGAsYHQ/s1600/js.png" alt="Placeholder Image">
+      <div class="card-content">
+        <h2>JavaScript</h2>
+        <p>Description 3JavaScript is a programming language that adds interactivity to your website. This happens in games, in the behavior of responses when buttons are pressed or with data entry on forms; with dynamic styling; with animation, etc.</p>
+      </div>
+    </div>
+
+    <!-- Dynamic card based on age input -->
+    <div class="card" id="ageCard" style="display: none;">
+      <img id="card-image" src="https://via.placeholder.com/300" alt="Placeholder Image">
+      <div class="card-content">
+        <h2 id="ageTitle">Age Card</h2>
+        <p id="ageDescription">Enter your age above</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js">
+    
+  </script>
+
+  <footer>
+    <p> Copyright © 2024 Sajal Asfak Robin. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

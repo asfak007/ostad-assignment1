@@ -1,0 +1,113 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: #dbd5d5;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: #2b4ff0;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1; /* Flexible to expand and fill available space */
+    padding: 20px;
+  }
+
+  .card {
+    width: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    transition: transform 0.5s ease;width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 8px 8px 0 0;
+    transition: transform 0.5s ease;
+  }
+
+  .card:hover img {
+    transform: scale(1.1);
+  }
+
+  .card-content {
+    padding: 15px;
+    background-color: #fff;
+  }
+
+  .card h2 {
+    margin-top: 0;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    color: #666;
+    line-height: 1.5;
+  }
+
+  .age-input {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .age-input input {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+    margin-right: 10px;
+  }
+
+  footer {
+    background: linear-gradient(to right, #c7c4c4, #555);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    flex-shrink: 0; /* Do not shrink the footer */
+  }
+
+  footer p {
+    margin: 0;
+  }
